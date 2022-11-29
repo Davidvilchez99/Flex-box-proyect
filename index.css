@@ -599,6 +599,13 @@ text-align: center;
         height: 100vh;
         }
 
+        form{
+            font-size: small;
+        }
+        #submit--contact{
+            font-size: x-small;
+        }
+
 }
 
 @media screen and (max-width: 610px){
@@ -620,7 +627,7 @@ text-align: center;
 
     #hero{
         margin-left: 8vh;
-        width: 107vh;
+        width: 119vh;
         height: 109vh;
         
     }
@@ -638,12 +645,12 @@ text-align: center;
     #hero::before {
     left: 9vh;
     top: 9vh;
-    width: 107vh;
+    width: 119vh;
     height: 109vh;
     }
     #works--section{
         margin-left: 8vh;
-        width: 101vh;
+        width: 111vh;
 
     }
     #proyects{
@@ -656,27 +663,27 @@ text-align: center;
     }
     #aboutMe--section{
         margin-left: 8vh;
-        width: 107vh;
+        width: 119vh;
     }
     #skills--section{
         margin-left: 8vh;
-        width: 107vh;
+        width: 119vh;
     }
     .skill-per{
         font-size: 1em;
     }
     #services--section{
         margin-left: 8vh;
-        width: 107vh;
+        width: 119vh;
         padding-top: 1vh;
     }
     #testimonials--section{
         margin-left: 8vh;
-        width: 107vh;
+        width: 119vh;
     }
     #contact--section{
         margin-left: 8vh;
-        width: 107vh;
+        width: 119vh;
     }
     form{
         font-size: small;
@@ -686,7 +693,7 @@ text-align: center;
     }
     #button--section{
         margin-left: 8vh;
-        width: 107vh;
+        width: 117vh;
     }
 
 }
@@ -697,6 +704,9 @@ text-align: center;
         width: 9vh;
         margin-left: 1vh;
     }
+    aside>a{
+        margin-left: 1vh;
+    }
     body{
         background-color: #f8cded;
     }
@@ -704,6 +714,9 @@ text-align: center;
         height: 8vh;
         margin-left: 9vh;
         margin-top: 1vh;
+    }
+    nav>ul>li>a{
+        font-size: 3.5vh;
     }
     #hero{
         margin-left: 9vh;
@@ -730,7 +743,7 @@ text-align: center;
     }
     #works--section{
         margin-left: 9vh;
-        width: 116vh;
+        width: 113vh;
 
     }
     #proyects{
