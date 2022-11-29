@@ -584,6 +584,22 @@ text-align: center;
     color: #f8cded;
 }
 
+@media screen and (max-width: 900px){
+    aside{
+        width: 8vh;
+    }
+    header{
+        height: 8vh;
+        background-color: #f8cded;
+    }
+    #hero::before {
+        left: 8vh;
+        top: 8vh;
+        width: 105vh;
+        height: 100vh;
+        }
+
+}
 
 @media screen and (max-width: 610px){
     aside{
@@ -598,11 +614,14 @@ text-align: center;
         margin-left: 8vh;
         width: 105vh;
         margin-top: 1vh;
-    }
+        display: flex;
+        justify-content: center;
+    } 
+
     #hero{
         margin-left: 8vh;
-        width: 105vh;
-        height: 108vh;
+        width: 107vh;
+        height: 109vh;
         
     }
     #hero--info{
@@ -619,8 +638,8 @@ text-align: center;
     #hero::before {
     left: 9vh;
     top: 9vh;
-    width: 105vh;
-    height: 107vh;
+    width: 107vh;
+    height: 109vh;
     }
     #works--section{
         margin-left: 8vh;
@@ -637,27 +656,27 @@ text-align: center;
     }
     #aboutMe--section{
         margin-left: 8vh;
-        width: 105vh;
+        width: 107vh;
     }
     #skills--section{
         margin-left: 8vh;
-        width: 105vh;
+        width: 107vh;
     }
     .skill-per{
         font-size: 1em;
     }
     #services--section{
         margin-left: 8vh;
-        width: 105vh;
+        width: 107vh;
         padding-top: 1vh;
     }
     #testimonials--section{
         margin-left: 8vh;
-        width: 105vh;
+        width: 107vh;
     }
     #contact--section{
         margin-left: 8vh;
-        width: 105vh;
+        width: 107vh;
     }
     form{
         font-size: small;
@@ -667,7 +686,7 @@ text-align: center;
     }
     #button--section{
         margin-left: 8vh;
-        width: 105vh;
+        width: 107vh;
     }
 
 }
@@ -675,7 +694,7 @@ text-align: center;
 
 @media screen and (max-width: 460px){
     aside{
-        width: 8vh;
+        width: 9vh;
         margin-left: 1vh;
     }
     body{
@@ -683,12 +702,13 @@ text-align: center;
     }
     header{
         height: 8vh;
-        margin-left: 8vh;
+        margin-left: 9vh;
         margin-top: 1vh;
     }
     #hero{
-        margin-left: 8vh;
+        margin-left: 9vh;
         height: 108vh;
+        width: 120vh;
         
     }
     #hero--info{
@@ -703,12 +723,14 @@ text-align: center;
         margin-top: 15vh;
     } */
     #hero::before {
-    left: 9vh;
+    left: 10vh;
     top: 9vh;
     height: 108vh;
+    width: 120vh;
     }
     #works--section{
-        margin-left: 8vh;
+        margin-left: 9vh;
+        width: 116vh;
 
     }
     #proyects{
@@ -720,27 +742,32 @@ text-align: center;
         font-size: 0.7em;
     }
     #aboutMe--section{
-        margin-left: 8vh;
+        margin-left: 9vh;
+        width: 120vh;
         
     }
     #skills--section{
-        margin-left: 8vh;
+        margin-left: 9vh;
+        width: 120vh;
         
     }
     .skill-per{
         font-size: 1em;
     }
     #services--section{
-        margin-left: 8vh;
+        margin-left: 9vh;
+        width: 120vh;
         
         padding-top: 1vh;
     }
     #testimonials--section{
-        margin-left: 8vh;
+        width: 120vh;
+        margin-left: 9vh;
         
     }
     #contact--section{
-        margin-left: 8vh;
+        margin-left: 9vh;
+        width: 120vh;
         
     }
     form{
@@ -750,7 +777,8 @@ text-align: center;
         font-size: x-small;
     }
     #button--section{
-        margin-left: 8vh;
+        margin-left: 9vh;
+        width: 120vh;
     }
 
 }
