@@ -610,25 +610,25 @@ text-align: center;
 
 @media screen and (max-width: 610px){
     aside{
-        width: 8vh;
-        margin-left: 1vh;
+        width: 9vw;
+        margin-left: 1vw;
     }
     body{
         background-color: #f8cded;
     }
     header{
-        height: 8vh;
-        margin-left: 8vh;
-        width: 105vh;
-        margin-top: 1vh;
+        height: 8vw;
+        margin-left: 9vw;
+        width: 138vw;
+        margin-top: 1vw;
         display: flex;
         justify-content: center;
     } 
 
     #hero{
         margin-left: 8vh;
-        width: 119vh;
-        height: 109vh;
+        width: 135.5vw;
+        height: 93vw;
         
     }
     #hero--info{
@@ -643,14 +643,14 @@ text-align: center;
         margin-top: 15vh;
     } */
     #hero::before {
-    left: 9vh;
-    top: 9vh;
-    width: 119vh;
-    height: 109vh;
+        left: 11vw;
+        top: 9vw;
+        width: 132.5vw;
+        height: 93vw;
     }
     #works--section{
         margin-left: 8vh;
-        width: 111vh;
+        width: 129.5vw;
 
     }
     #proyects{
@@ -658,32 +658,32 @@ text-align: center;
         justify-content: center;
     }
     #proyects>div{
-        width: 35vh;
+        width: 50vw;
         font-size: 0.7em;
     }
     #aboutMe--section{
         margin-left: 8vh;
-        width: 119vh;
+        width: 135.5vw;
     }
     #skills--section{
         margin-left: 8vh;
-        width: 119vh;
+        width: 135.5vw;
     }
     .skill-per{
         font-size: 1em;
     }
     #services--section{
         margin-left: 8vh;
-        width: 119vh;
+        width: 135.5vw;
         padding-top: 1vh;
     }
     #testimonials--section{
         margin-left: 8vh;
-        width: 119vh;
+        width: 135.5vw;
     }
     #contact--section{
         margin-left: 8vh;
-        width: 119vh;
+        width: 125.5vw;
     }
     form{
         font-size: small;
@@ -693,7 +693,7 @@ text-align: center;
     }
     #button--section{
         margin-left: 8vh;
-        width: 117vh;
+        width: 135.5vw;
     }
 
 }
@@ -701,33 +701,33 @@ text-align: center;
 
 @media screen and (max-width: 460px){
     aside{
-        width: 9vh;
-        margin-left: 1vh;
+        width: 9vw;
+        /* margin-left: 1vh; */
     }
     aside>a{
-        margin-left: 1vh;
+        margin-left: 1vw;
     }
     body{
         background-color: #f8cded;
     }
     header{
-        height: 8vh;
-        margin-left: 9vh;
-        margin-top: 1vh;
+        height: 8vw;
+        margin-left: 9vw;
+        margin-top: 1vw;
     }
     nav>ul>li>a{
-        font-size: 3.5vh;
+        font-size: 3.5vw;
     }
     #hero{
-        margin-left: 9vh;
-        height: 108vh;
-        width: 120vh;
+        margin-left: 14vw;
+        height: 108vw;
+        width: 176.5vw;
         
     }
     #hero--info{
-        margin-right: 30vh;
-        margin-top: 20vh;
-        padding-top: 10vh;
+        margin-right: 30vw;
+        margin-top: 20vw;
+        padding-top: 15vw;
     }
     /* .sweet-title{
         margin-top: 15vh;
@@ -736,14 +736,14 @@ text-align: center;
         margin-top: 15vh;
     } */
     #hero::before {
-    left: 10vh;
-    top: 9vh;
-    height: 108vh;
-    width: 120vh;
+    left: 14vw;
+    top: 9vw;
+    height: 106vw;
+    width: 176.5vw;
     }
     #works--section{
-        margin-left: 9vh;
-        width: 113vh;
+        margin-left: 14vw;
+        width: 170.5vw;
 
     }
     #proyects{
@@ -751,36 +751,36 @@ text-align: center;
         justify-content: center;
     }
     #proyects>div{
-        width: 70vh;
+        width: 110vw;
         font-size: 0.7em;
     }
     #aboutMe--section{
-        margin-left: 9vh;
-        width: 120vh;
+        margin-left: 14vw;
+        width: 176.5vw;
         
     }
     #skills--section{
-        margin-left: 9vh;
-        width: 120vh;
+        margin-left: 14vw;
+        width: 176.5vw;
         
     }
     .skill-per{
         font-size: 1em;
     }
     #services--section{
-        margin-left: 9vh;
-        width: 120vh;
+        margin-left: 14vw;
+        width: 176.5vw;
         
-        padding-top: 1vh;
+        padding-top: 1vw;
     }
     #testimonials--section{
-        width: 120vh;
-        margin-left: 9vh;
+        margin-left: 14vw;
+        width: 176.5vw;
         
     }
     #contact--section{
-        margin-left: 9vh;
-        width: 120vh;
+        margin-left: 14vw;
+        width: 166.5vw;
         
     }
     form{
@@ -790,8 +790,8 @@ text-align: center;
         font-size: x-small;
     }
     #button--section{
-        margin-left: 9vh;
-        width: 120vh;
+        margin-left: 14vw;
+        width: 176.5vw;
     }
 
 }
