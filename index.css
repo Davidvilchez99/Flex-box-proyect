@@ -1,13 +1,24 @@
+/*Fonts*/
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap');
+
+/*Initialize*/
+
 *{
     padding: 0;
     margin: 0;
 }
+/*Font h1*/
+
+.h1--class{
+    font-family: 'Press Start 2P', cursive;
+}
+
+/*nav section */
 
 nav{
     background-color: #f8cded;
@@ -15,45 +26,32 @@ nav{
     display: flex;
     justify-content: flex-end;
 }
-.h1--class{
-    /* font-family: 'Permanent Marker', cursive; 
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Rubik Glitch', cursive;*/
-    font-family: 'Press Start 2P', cursive;
-}
 
 nav ul li a{
     position: relative;
-    padding: 0.2rem 0.5rem;/*para que el efecto se vea mejor*/
+    padding: 0.2rem 0.5rem;
   
                                  
 }
-/*pseudoelementos after y before*/
+
 nav ul li a:link::after,
 nav ul li a:visited::after,
 nav ul li a:link::before,
 nav ul li a:visited::before{
-   /*creo el contenido sin nada*/
     content: "";
-  /*lo posiciono respecto a su padre nav ul li a*/
     position: absolute;
     left: 0;
-  /*lo dimensiono, */
-    width: 100%;/*ancho=ancho de su padre*/
-    height: 0.15rem;/*alto->grosor de una líena*/
+    width: 100%;
+    height: 0.15rem;
     background-color: #3a2e47;
-
-    transform: scaleX(0); /*en principio no es visible*/
-
+    transform: scaleX(0);
     transition: transform 0.6s ease-in-out;
 }
-/*hacemos la transformación*/
-/*diferenciamos entre after y before para que se pinte de forma diferente*/
+
 nav ul li a:link::after,
 nav ul li a:visited::after{
     top: 0;
-/* Transform-origen es center por defecto */
-    transform-origin: left;/* para que empiece a dibujarse desde la izquierda*/
+    transform-origin: left;
 }
 
 nav ul li a:link::before,
@@ -61,36 +59,40 @@ nav ul li a:visited::before{
     bottom: 0;
     transform-origin: right;
 }
+
 nav ul li a:link::before,
 nav ul li a:visited::before{
     bottom: 0;
     transform-origin: right;
 }
-/*cuando aparece hover lo hacemos visible*/
 
 nav ul li a:hover::after,
 nav ul li a:hover::before{
     transform:scaleX(1);
-
 }
 
 header{
     height: 5%;
 }
+
 ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     padding: 1%;
 }
+
 li{
     padding-right: 20px;
 }
+
 li>a{
     text-decoration: none;
     color: #3a2e47;
     font-size: large;
 }
+
+/*aside section*/
 
 aside>a{
     width: 50%;
@@ -114,6 +116,8 @@ aside{
     justify-content: center;
 }
 
+/*hero section*/
+
 #hero{
     background-color: #3a2e47;
     display: flex;
@@ -126,8 +130,8 @@ aside{
     height: 100vh;
     display: flex;
     justify-content: center;
-    
 }
+
 #hero::before {
     content: "";
     position: absolute;
@@ -137,6 +141,7 @@ aside{
     bottom: 0px;
     background-color: rgba(0, 0, 0, 0.25);
 }
+
 .sweet-title {
     order: 2;
     font-weight: 900;
@@ -149,17 +154,15 @@ aside{
     6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
     6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
     9px 7px 1px #4af7ff;
-    
 }
+
 span::before {
     content: attr(data-text);
     position: absolute;
     text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9,
         -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
     z-index: 1;
-  }
-
-
+}
 
 #hero>#hero--info{
     width: 40%;
@@ -171,27 +174,39 @@ span::before {
     text-align: center;
     transform: skew(0, -10deg);
 }
+
 #hero>#hero--info>h1{
     margin: 2%;
     font-size: 5em;
     padding-top: 15%;
 }
+
 #hero>#hero--info>h3{
     margin: 2%;
     font-size: large;
     margin-top: 5%;
 }
-#hero>#hero--img{
 
+#hero>#hero--img{
     padding: 2%;
 }
+
+/*works section*/
+
+#works--section{
+    text-align: center;
+    background-color: #ba98dd;
+    color: #3a2e47;
+    font-size: xx-large;
+    padding: 3%;
+}
+
 #proyects{
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     margin-left: 4%;
     background-color: #3a2e47;
-   
 }
 
 #proyects>div{
@@ -201,10 +216,12 @@ span::before {
     border-radius: 1%;
     font-family: 'Hahmlet', serif;
 }
+
 #proyects>div>a>img{
     width: 100%;
     height: 30vh;
 }
+
 #proyects>div>a>img:hover{
     box-shadow: #ba98dd 0px 19px 38px, #ba98dd 0px 15px 12px;
 }
@@ -213,13 +230,9 @@ span::before {
 color: white;
 text-align: center;
 }
-#works--section{
-    text-align: center;
-    background-color: #ba98dd;
-    color: #3a2e47;
-    font-size: xx-large;
-    padding: 3%;
-}
+
+/*About me section*/
+
 #aboutMe--section{
     margin-left: 4%;
     background-color: #735e8d;;
@@ -227,34 +240,41 @@ text-align: center;
     justify-content: center;
     color:#f8cded;
 }
+
 #aboutMe--div{
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 70%;
 }
+
 #aboutMe--div>img{
     padding: 4%;
     width: 40%;
     animation-name: moveInRight;
     animation-duration: 3s;
 }
+
 #aboutMe--div>div{
     padding: 4%;
     margin-top: 4%;
 }
+
 #aboutMe--div2>h1{
     padding: 5%;
     font-size: xx-large;
     animation-name: moveInleft;
     animation-duration: 3s;
 }
+
 #aboutMe--div2>p{
     padding: 5%;
     font-size: large;
     animation-name: moveInleft;
     animation-duration: 3s;
 }
+
+/*Animation move left and right*/
 
 @keyframes moveInleft {
     0% {
@@ -288,8 +308,6 @@ text-align: center;
 
 }
 
-
-
 /* skills section */
 
 #skills--section{
@@ -307,22 +325,25 @@ text-align: center;
     justify-content: center;
     padding: 3%;
 }
+
 #skills--div{
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: 'Indie Flower', cursive;
-
 }
+
 .skills{
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
 }
+
 .skills>h3{
     font-size: x-large;
     text-align: center;
 }
+
 .skill-name{
     font-size: 18px;
     font-weight: 700;
@@ -330,12 +351,14 @@ text-align: center;
     text-transform: uppercase;
     margin: 20px 0;
 }
+
 .skill-bar{
     height: 14px;
     background-color: #ba98dd;
     border-radius: 3px;
     padding-bottom: 3%;
 }
+
 .skill-per{
     height: 14px;
     background-color: #f8cded;
@@ -349,6 +372,8 @@ text-align: center;
     padding-bottom: 3%;
 }
 
+/*Animation bars*/
+
 @keyframes fillBars{
     from{
         width: 0;
@@ -357,21 +382,27 @@ text-align: center;
         width: 100%;
     }
 }
+
+/*Services section*/
+
 #services--section{
     margin-left: 4%;
     background-color:#3a2e47;
     color: #f8cded;
 }
+
 #services--section>h1{
     padding-top: 4%;
     text-align: center;
     font-size: xx-large;
 }
+
 #services--div{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .service--div{
     width: 30%;
     margin: 5%;
@@ -387,15 +418,11 @@ text-align: center;
     width: 100%;
 }
 
-/**/
-
-
 .service--div{
     position: relative;
     width: 20rem;
     padding: 2em;
     color: white;
-    /*z-index: 1;*/
 }
 
 .service--div::after,
@@ -407,40 +434,39 @@ text-align: center;
     top: 0;
     height: 100%;
     background-color:#ba98dd;
-    /* duracion de la animacion */
     transition: transform 0.4s ease-in-out;
     transform: scaleX(0);
-    /*z-index: -1;*/
 }
+
 .service--div:hover::after,
 .service--div:hover::before{
     background-color:#ba98dd;
     transform: scaleX(1);
-    /* z index para mover la capa inferior */
-    /*z-index: -1;*/
 }
 
 .service--div>h1,
 .service--div>img,
-.service--div>p
-{
+.service--div>p{
     position: relative;
     z-index: 2;
     margin-bottom: 5%;
 }
 
-/**/
+/*Testimonials section*/
+
 #testimonials--section{
     margin-left: 4%;
     background-color:#ba98dd;
     padding-bottom: 2%;
     color: #3a2e47;
 }
+
 #testimonials--section>h1{
     padding-top: 4%;
     text-align: center;
     font-size: xx-large;
 }
+
 #testimonials--div{
     display: flex;
     flex-direction: row;
@@ -454,15 +480,16 @@ text-align: center;
 
 }
 
-
 .card{
     position: relative;
     width: fit-content;
     height: fit-content;
 }
+
 .card--title{
     margin-bottom: 5%;
 }
+
 .card--img{
     width: 100%;
     transform: scale(1);
@@ -472,7 +499,6 @@ text-align: center;
 .card--info{
     position: absolute;
     bottom: 50px;
-    /* left: -30px; */
     width: 50%;
     height: 50%;
     padding: 7px;
@@ -494,6 +520,8 @@ text-align: center;
     transform: scaleX(1);
 }
 
+/*Constact section*/
+
 #contact--section{
     background-color:#130912;
     color:#ba98dd;
@@ -504,14 +532,17 @@ text-align: center;
     justify-content: center;
 
 }
+
 #contact--div>h1{
     margin: 2%;
 }
+
 #contact--div>form>label{
     margin: 2%;
     font-family: 'Oswald', sans-serif;
 
 }
+
 #contact--div{
     display: flex;
     justify-content: center;
@@ -520,9 +551,9 @@ text-align: center;
     background-color: #130912;
     width: 50%;
     padding-bottom: 10%;
-    box-shadow: 0px 0px 5px 1px #ba98dd;
-    
+    box-shadow: 0px 0px 5px 1px #ba98dd; 
 }
+
 #nameSurname--contact,
 #email--contact{
     margin: 1%;
@@ -542,6 +573,7 @@ text-align: center;
     outline: none;
     border: none;
 }
+
 #submit--contact{
     width: 30%;
     height: 15%;
@@ -555,6 +587,7 @@ text-align: center;
     font-size: large;
 
 }
+
 #submit--contact:hover {
     box-shadow: 0px 0px 5px 1px #f8cded;
     color: #f8cded;
@@ -564,11 +597,13 @@ text-align: center;
 #email--contact:required:valid {
     border-bottom: #ba98dd 3px solid;
 }
-  #nameSurname--contact:invalid,
+
+#nameSurname--contact:invalid,
 #email--contact:invalid {
     border-bottom: red 3px solid;
 }
 
+/*Button section*/
 
 #button--section{
     background-color: #130912;
@@ -576,22 +611,28 @@ text-align: center;
     display: flex;
     justify-content: center;
 }
+
 #button--section>a>i{
     color: #ba98dd;
     font-size: 4em;
 }
+
 #button--section>a>i:hover{
     color: #f8cded;
 }
+
+/*Media querys*/
 
 @media screen and (max-width: 900px){
     aside{
         width: 8vh;
     }
+
     header{
         height: 8vh;
         background-color: #f8cded;
     }
+
     #hero::before {
         left: 8vh;
         top: 8vh;
@@ -602,10 +643,10 @@ text-align: center;
         form{
             font-size: small;
         }
+
         #submit--contact{
             font-size: x-small;
         }
-
 }
 
 @media screen and (max-width: 610px){
@@ -613,9 +654,11 @@ text-align: center;
         width: 9vw;
         margin-left: 1vw;
     }
+
     body{
         background-color: #f8cded;
     }
+
     header{
         height: 8vw;
         margin-left: 9vw;
@@ -629,207 +672,177 @@ text-align: center;
         margin-left: 8vh;
         width: 135.5vw;
         height: 93vw;
-        
     }
+
     #hero--info{
         margin-right: 30vh;
         margin-top: 20vh;
         padding-top: 10vh;
     }
-    /* .sweet-title{
-        margin-top: 15vh;
-    }
-    #hero--info>h3{
-        margin-top: 15vh;
-    } */
-    #hero::before {
+
+    #hero::before{
         left: 11vw;
         top: 9vw;
         width: 132.5vw;
         height: 93vw;
     }
+
     #works--section{
         margin-left: 8vh;
         width: 129.5vw;
-
     }
+
     #proyects{
         display: flex;
         justify-content: center;
     }
+
     #proyects>div{
         width: 50vw;
         font-size: 0.7em;
     }
+
     #aboutMe--section{
         margin-left: 8vh;
         width: 135.5vw;
     }
+
     #skills--section{
         margin-left: 8vh;
         width: 135.5vw;
     }
+
     .skill-per{
         font-size: 1em;
     }
+
     #services--section{
         margin-left: 8vh;
         width: 135.5vw;
         padding-top: 1vh;
     }
+
     #testimonials--section{
         margin-left: 8vh;
         width: 135.5vw;
     }
+
     #contact--section{
         margin-left: 8vh;
         width: 125.5vw;
     }
+
     form{
         font-size: small;
     }
+
     #submit--contact{
         font-size: x-small;
     }
+
     #button--section{
         margin-left: 8vh;
         width: 135.5vw;
     }
-
 }
-
 
 @media screen and (max-width: 460px){
     aside{
         width: 9vw;
-        /* margin-left: 1vh; */
     }
+
     aside>a{
         margin-left: 1vw;
     }
+
     body{
         background-color: #f8cded;
     }
+
     header{
         height: 8vw;
         margin-left: 9vw;
         margin-top: 1vw;
     }
+
     nav>ul>li>a{
         font-size: 3.5vw;
     }
+
     #hero{
         margin-left: 14vw;
         height: 108vw;
-        width: 176.5vw;
-        
+        width: 176.5vw; 
     }
+
     #hero--info{
         margin-right: 30vw;
         margin-top: 20vw;
         padding-top: 15vw;
     }
-    /* .sweet-title{
-        margin-top: 15vh;
-    }
-    #hero--info>h3{
-        margin-top: 15vh;
-    } */
-    #hero::before {
+
+    #hero::before{
     left: 14vw;
     top: 9vw;
     height: 106vw;
     width: 176.5vw;
     }
+
     #works--section{
         margin-left: 14vw;
         width: 170.5vw;
-
     }
+
     #proyects{
         display: flex;
         justify-content: center;
     }
+
     #proyects>div{
         width: 110vw;
         font-size: 0.7em;
     }
+
     #aboutMe--section{
         margin-left: 14vw;
         width: 176.5vw;
-        
     }
+
     #skills--section{
         margin-left: 14vw;
         width: 176.5vw;
-        
     }
+
     .skill-per{
         font-size: 1em;
     }
+
     #services--section{
         margin-left: 14vw;
         width: 176.5vw;
-        
         padding-top: 1vw;
     }
+
     #testimonials--section{
         margin-left: 14vw;
         width: 176.5vw;
-        
     }
+
     #contact--section{
         margin-left: 14vw;
         width: 166.5vw;
-        
     }
+
     form{
         font-size: small;
     }
+
     #submit--contact{
         font-size: x-small;
     }
+
     #button--section{
         margin-left: 14vw;
         width: 176.5vw;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-@media (max-width:  610px) {   
-    aside{
-        width: 8%;
-    } 
-
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 8%;
-        text-align: center;
-
-    }
-    /* ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 30%;
-    }
-    li{
-        padding-top: 2%;
-        
-    } */
